@@ -1,4 +1,4 @@
-    let peso = prompt('Ingrese su peso');
+    let peso = getElementById("peso").innerHTML;
     let planeta = prompt('Ingresa el planeta que quieres saber tu peso, entre: marte, luna, jupiter, saturno, venus, urano. neptuno y mercurio');
 
         let marte = peso * 3.7 / 9.8;
@@ -31,8 +31,14 @@
     }else if (planeta == 'neptuno'){
         alert(`En la tierra tu peso es de ${peso} kg - tu peso en neptuno es ${Math.round(neptuno)} kg`)
 
-    }else{
+    }else if (planeta == 'mercurio'){
         alert(`En la tierra tu peso es de ${peso} kg - tu peso en mercurio es ${Math.round(mercurio)} kg`)
+
+    }else if (planeta == ''){
+        alert('No es válido')
+
+    }else{ 
+
     }
 
         document.getElementById("1").innerHTML = 
