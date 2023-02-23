@@ -15,10 +15,10 @@
 
     <div class="formulario">
         <form action="" id="form" class="form" method="post">
-            <label class="titulo-ingresa">Ingresa tu peso</label><br>
-            <input  required="" class="inputs" type="number" name="peso" id="peso" placeholder="Ej: 65" value=""/> <br>
-        <!-- <input class="inputs" type="text" name="planeta" id="planeta" placeholder="Ingresa el planeta (en minúsculas)"> <br> -->
-
+            <label for="peso" class="titulo-ingresa">Ingresa tu peso</label><br>
+            <input class="inputs" type="number" name="number" id="peso" placeholder="Ej: 65" required> <br>
+            <!-- <input class="inputs" type="text" name="planeta" id="planeta" placeholder="Ingresa el planeta (en minúsculas)"> <br> -->
+            
             <select class="selector" id="opcion">
                 <option value="Seleccione uno" selected disabled>-Seleccione un planeta</option>
                 <option id="opcion">Marte</option>
@@ -31,16 +31,16 @@
                 <option id="opcion">Mercurio</option>
             </select> <br>
             
-            <input class="boton" type="button" value="Enviar" onclick="comenzar()"> <br>
-            <input class="boton-mostrar" type="button" value="Mostrar en todos los planetas" onclick="todos"> <br>
-            <input class="boton-reset" type="reset" value="De nuevo" >
+            <input class="boton" type="submit" value="Enviar" onclick="comenzar()"> <br>
+            <input class="boton-mostrar" type="submit" value="Mostrar en todos los planetas" onclick="todos"> <br>
+            <input class="boton-reset" type="reset" value="De nuevo" #form>
         </form>
     </div>
     
     <div class="caja-resultado">
         <p id="resultado" class="resultado"></p>
     </div>
-    
+
     <div class="todos">
         <p id="1" class="peso"></p>
         <p id="2" class="peso"></p>

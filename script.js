@@ -37,12 +37,6 @@ let comenzar = function(){
     }else if (planeta == 'Mercurio'){
         document.getElementById("resultado").innerHTML = (`Tu peso en mercurio es de: ${Math.round(mercurio)} kg`)
 
-    }else if (planeta == ''){
-        document.getElementById("resultado").innerHTML = ('No es válido')
-
-    }else if(planeta == 0){ 
-        alert('De nuevo');
-
     }else{
         alert('De nuevo');
     }
