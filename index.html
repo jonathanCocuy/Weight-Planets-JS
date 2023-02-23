@@ -14,14 +14,34 @@
     <h1 class="titulo-principal"> Tu peso en los planetas </h1>
 
     <div class="formulario">
-        <form action="" id="form" class="form">
-            <input class="inputs" type="number" name="peso" id="peso" placeholder="Ingresa tu peso - ej: 65"> <br>
-            <input class="inputs" type="text" name="planeta" id="planeta" placeholder="Ingresa el planeta (en minúsculas)"> <br>
-            <input class="boton" type="button" value="Enviar" onclick="comenzar()">
+        <form action="" id="form" class="form" method="post">
+            <label class="titulo-ingresa">Ingresa tu peso</label><br>
+            <input  required="" class="inputs" type="number" name="peso" id="peso" placeholder="Ej: 65" value=""/> <br>
+        <!-- <input class="inputs" type="text" name="planeta" id="planeta" placeholder="Ingresa el planeta (en minúsculas)"> <br> -->
+
+            <select class="selector" id="opcion">
+                <option value="Seleccione uno" selected disabled>-Seleccione un planeta</option>
+                <option id="opcion">Marte</option>
+                <option id="opcion">Luna</option>
+                <option id="opcion">Jupiter</option>
+                <option id="opcion">Saturno</option>
+                <option id="opcion">Venus</option>
+                <option id="opcion">Urano</option>
+                <option id="opcion">Neptuno</option>
+                <option id="opcion">Mercurio</option>
+            </select> <br>
+            
+            <input class="boton" type="button" value="Enviar" onclick="comenzar()"> <br>
+            <input class="boton-mostrar" type="button" value="Mostrar en todos los planetas" onclick="todos"> <br>
+            <input class="boton-reset" type="reset" value="De nuevo" >
         </form>
     </div>
-
-    <div class="">
+    
+    <div class="caja-resultado">
+        <p id="resultado" class="resultado"></p>
+    </div>
+    
+    <div class="todos">
         <p id="1" class="peso"></p>
         <p id="2" class="peso"></p>
         <p id="3" class="peso"></p>
@@ -32,7 +52,7 @@
         <p id="8" class="peso"></p>
         <p id="9" class="peso"></p>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

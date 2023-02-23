@@ -1,7 +1,7 @@
 let comenzar = function(){
 
     let peso = document.getElementById("peso").value;
-    let planeta = document.getElementById("planeta").value
+    let planeta = document.getElementById("opcion").value
 
         let marte = peso * 3.7 / 9.8;
         let luna = peso * 1.6 / 9.8;
@@ -13,61 +13,67 @@ let comenzar = function(){
         let mercurio = peso * 3.7 / 9.8;
 
 
-    if (planeta == 'marte'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en marte es ${Math.round(marte)} kg`)
+    if (planeta == 'Marte'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en marte es de: ${Math.round(marte)} kg`)
 
-    }else if (planeta == 'luna'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en la luna es ${Math.round(luna)} kg`)
+    }else if (planeta == 'Luna'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en la luna es de: ${Math.round(luna)} kg`)
 
-    }else if (planeta == 'jupiter'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en jupiter es ${Math.round(jupiter)} kg`)
+    }else if (planeta == 'Jupiter'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en jupiter es de: ${Math.round(jupiter)} kg`)
     
-    }else if (planeta == 'saturno'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en saturno es ${Math.round(saturno)} kg`)
+    }else if (planeta == 'Saturno'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en saturno es de: ${Math.round(saturno)} kg`)
 
-    }else if (planeta == 'venus'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en venus es ${Math.round(venus)} kg`)
+    }else if (planeta == 'Venus'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en venus es de: ${Math.round(venus)} kg`)
 
-    }else if (planeta == 'urano'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en urano es ${Math.round(urano)} kg`)
+    }else if (planeta == 'Urano'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en urano es de: ${Math.round(urano)} kg`)
 
-    }else if (planeta == 'neptuno'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en neptuno es ${Math.round(neptuno)} kg`)
+    }else if (planeta == 'Neptuno'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en neptuno es de: ${Math.round(neptuno)} kg`)
 
-    }else if (planeta == 'mercurio'){
-        alert(`En la tierra tu peso es de ${peso} kg - tu peso en mercurio es ${Math.round(mercurio)} kg`)
+    }else if (planeta == 'Mercurio'){
+        document.getElementById("resultado").innerHTML = (`Tu peso en mercurio es de: ${Math.round(mercurio)} kg`)
 
     }else if (planeta == ''){
-        alert('No es válido')
+        document.getElementById("resultado").innerHTML = ('No es válido')
 
-    }else{ 
+    }else if(planeta == 0){ 
+        alert('De nuevo');
 
-        document.getElementById("1").innerHTML = 
-            `Peso en la tierra ${peso} kg`;
-        
-        document.getElementById("2").innerHTML = 
-            `Peso en marte ${Math.round(marte)} kg`;
-    
-        document.getElementById("3").innerHTML = 
-            `Peso en la luna ${Math.round(luna)} kg`;
-        
-        document.getElementById("4").innerHTML = 
-            `Peso en jupiter ${Math.round(jupiter)} kg`;
-        
-        document.getElementById("5").innerHTML = 
-            `Peso en la saturno ${Math.round(saturno)} kg`;
-        
-        document.getElementById("6").innerHTML = 
-            `Peso en la venus ${Math.round(venus)} kg`;
-        
-        document.getElementById("7").innerHTML = 
-            `Peso en la urano ${Math.round(urano)} kg`;
-        
-        document.getElementById("8").innerHTML = 
-            `Peso en la neptuno ${Math.round(neptuno)} kg`;
-        
-        document.getElementById("9").innerHTML = 
-            `Peso en la mercurio ${Math.round(mercurio)} kg`;
+    }else{
+        alert('De nuevo');
     }
+}
 
+let todos = function(){
+
+    document.getElementById("1").innerHTML = 
+    `Peso en la tierra ${peso} kg`;
+
+    document.getElementById("2").innerHTML = 
+        `Peso en marte ${Math.round(marte)} kg`;
+
+    document.getElementById("3").innerHTML = 
+        `Peso en la luna ${Math.round(luna)} kg`;
+
+    document.getElementById("4").innerHTML = 
+        `Peso en jupiter ${Math.round(jupiter)} kg`;
+
+    document.getElementById("5").innerHTML = 
+        `Peso en la saturno ${Math.round(saturno)} kg`;
+
+    document.getElementById("6").innerHTML = 
+        `Peso en la venus ${Math.round(venus)} kg`;
+
+    document.getElementById("7").innerHTML = 
+        `Peso en la urano ${Math.round(urano)} kg`;
+
+    document.getElementById("8").innerHTML = 
+        `Peso en la neptuno ${Math.round(neptuno)} kg`;
+
+    document.getElementById("9").innerHTML = 
+        `Peso en la mercurio ${Math.round(mercurio)} kg`;
 }

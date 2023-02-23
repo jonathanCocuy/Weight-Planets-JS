@@ -12,7 +12,6 @@
 
 .formulario{
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: center;
 }
@@ -21,12 +20,17 @@
     box-shadow: 0px 0px 4px black;
     border-radius: 10px;
     width: 310px;
-    height: 165px;
+    height: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.titulo-ingresa{
+   font-size: 17px;
+   font-weight: bolder;
 }
 
 .inputs{
@@ -39,6 +43,11 @@
     outline: none;
 }
 
+.inputs[type=number]::-webkit-inner-spin-button, 
+.inputs[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+}
+
 .inputs:hover{
     outline: 1px solid rgb(143, 143, 143);
 }
@@ -47,7 +56,62 @@
     border: 1px solid rgb(99, 99, 99);
 }
 
+.selector{
+    width: 280px;
+    height: 35px;
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
 .boton{
     width: 120px;
     height: 30px;
+    border: 1px solid white;
+    border-radius: 7px;
+    background: rgb(0, 156, 228);
+    color: white;
+    font-size: 17px;
 }
+
+.boton-mostrar{
+    width: 220px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 7px;
+    background: rgb(0, 116, 170);
+    color: white;
+    font-size: 15px;
+}
+
+.boton-reset{
+    width: 100px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 7px;
+    background: rgb(0, 70, 102);
+    color: white;
+    font-size: 13px;
+}
+
+.caja-resultado{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado{
+    width: 470px;
+    padding: 30px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    height: 120px;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
