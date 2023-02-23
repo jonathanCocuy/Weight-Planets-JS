@@ -173,8 +173,12 @@ body{
 @media screen and (max-width: 420px) {
     .resultado{
         width: 310px;
-        font: 25px;
+        font-size: 25px;
     }
 
+    .parrafo-principal{
+        width: 350px;
+        margin: 10px;
+    }
 
 }
