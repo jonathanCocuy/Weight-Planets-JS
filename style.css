@@ -128,6 +128,8 @@ body{
     background: rgb(0, 115, 168);
 }
 
+/* Recuadro del resultado */
+
 .caja-resultado{
     width: 100%;
     margin-top: 20px;
@@ -154,6 +156,25 @@ body{
 
 /* Responsive */
 
-@media screen {
+@media screen and (max-width: 570px){
+    .titulo-principal{
+        font-size: 30px;
+    }
+
+    .parrafo-principal{
+        font-size: 25px;
+    }
     
+    .resultado{
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .resultado{
+        width: 310px;
+        font: 25px;
+    }
+
+
 }
