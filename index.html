@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <title>Práctica</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/139/139706.png" type="image/x-icon">
+
+    <title>PesoPlanet</title>
 </head>
 <body>
-    <div>
-        <h1>Tu peso en los planetas</h1>
-    </div>
-    <div>
-        <form action="" id="table">
-            <label for="textop"> Ingresa tu peso </label> <br>
-            <input type="text" name="peso" placeholder="ej: 62" id="peso"> <br>
-            <label for="textop">Ingresa el planeta</label> <br>
-            <input type="radio" name="luna" id="luna" value="luna"> Luna<br>
-            <input type="radio" name="marte" id="luna" value="marte"> Marte
-    
+    <h1 class="titulo-principal"> Tu peso en los planetas </h1>
+
+    <div class="formulario">
+        <form action="" id="form" class="form">
+            <input class="inputs" type="text" name="peso" id="peso" placeholder="Ingresa tu peso - ej: 65"> <br>
+            <input class="inputs" type="text" name="planeta" id="planeta" placeholder="Ingresa el planeta (en minúsculas)"> <br>
+            <input class="boton" type="button" value="Enviar" onclick="comenzar()">
         </form>
     </div>
 
-    <p id="1" class="peso"></p>
-    <p id="2" class="peso"></p>
-    <p id="3" class="peso"></p>
-    <p id="4" class="peso"></p>
-    <p id="5" class="peso"></p>
-    <p id="6" class="peso"></p>
-    <p id="7" class="peso"></p>
-    <p id="8" class="peso"></p>
-    <p id="9" class="peso"></p>
+    <div class="">
+        <p id="1" class="peso"></p>
+        <p id="2" class="peso"></p>
+        <p id="3" class="peso"></p>
+        <p id="4" class="peso"></p>
+        <p id="5" class="peso"></p>
+        <p id="6" class="peso"></p>
+        <p id="7" class="peso"></p>
+        <p id="8" class="peso"></p>
+        <p id="9" class="peso"></p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
