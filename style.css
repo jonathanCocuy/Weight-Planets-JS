@@ -1,13 +1,33 @@
 *{
-    font-family: Helvetica;
+    font-family: Georgia ;
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-image: url(https://images5.alphacoders.com/117/1172191.png);
+    background-size: 1200px;
+    width: 100%;
+}
+
 .titulo-principal{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin: 20px;
+    border-radius: 10px;
+    color: rgb(215, 215, 215);
+}
+
+.caja-parrafo-principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.parrafo-principal{
+    font-size: 30px;
+    color: rgb(175, 175, 175);
 }
 
 .formulario{
@@ -20,17 +40,20 @@
     box-shadow: 0px 0px 4px black;
     border-radius: 10px;
     width: 310px;
-    height: 300px;
+    height: 260px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/370/073/non_2x/space-moon-planets-and-stars-galaxy-solar-system-cartoon-vector.jpg);    
+    background-size: 550px;
 }
 
 .titulo-ingresa{
    font-size: 17px;
    font-weight: bolder;
+   color: white;
 }
 
 .inputs{
@@ -74,7 +97,11 @@
     font-size: 17px;
 }
 
-.boton-mostrar{
+.boton:hover{
+    background:rgb(0, 116, 170) ;
+}
+
+/* .boton-mostrar{
     width: 220px;
     height: 30px;
     border: 1px solid white;
@@ -82,7 +109,7 @@
     background: rgb(0, 116, 170);
     color: white;
     font-size: 15px;
-}
+} */
 
 .boton-reset{
     width: 100px;
@@ -92,6 +119,10 @@
     background: rgb(0, 70, 102);
     color: white;
     font-size: 13px;
+}
+
+.boton-reset:hover{
+    background: rgb(0, 115, 168);
 }
 
 .caja-resultado{
@@ -108,10 +139,14 @@
     border-radius: 10px;
     height: 120px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    color: white;
+    background-image: url(https://images4.alphacoders.com/882/882586.jpg);
+    background-size: 510px;
+    background-position-x: center;
 
+}
 

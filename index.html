@@ -11,16 +11,18 @@
     <title>PesoPlanet</title>
 </head>
 <body>
-    <h1 class="titulo-principal"> Tu peso en los planetas </h1>
-
+    <h1 class="titulo-principal"> TU PESO EN LOS PLANETAS </h1>
+    <div class="caja-parrafo-principal">
+        <p class="parrafo-principal">En esta página podrás saber tu peso en los planetas del sistema solar</p>
+    </div>
     <div class="formulario">
-        <form action="" id="form" class="form" method="post">
+        <form action="" id="form" class="form">
             <label for="peso" class="titulo-ingresa">Ingresa tu peso</label><br>
             <input class="inputs" type="number" name="number" id="peso" placeholder="Ej: 65" required> <br>
             <!-- <input class="inputs" type="text" name="planeta" id="planeta" placeholder="Ingresa el planeta (en minúsculas)"> <br> -->
             
             <select class="selector" id="opcion">
-                <option value="Seleccione uno" selected disabled>-Seleccione un planeta</option>
+                <option value="Seleccione uno" selected disabled>- Seleccione un planeta</option>
                 <option id="opcion">Marte</option>
                 <option id="opcion">Luna</option>
                 <option id="opcion">Jupiter</option>
@@ -31,14 +33,14 @@
                 <option id="opcion">Mercurio</option>
             </select> <br>
             
-            <input class="boton" type="submit" value="Enviar" onclick="comenzar()"> <br>
-            <input class="boton-mostrar" type="submit" value="Mostrar en todos los planetas" onclick="todos"> <br>
-            <input class="boton-reset" type="reset" value="De nuevo" #form>
+            <input class="boton" type="button" value="Enviar" onclick="comenzar()"> <br>
+            <!-- <input class="boton-mostrar" type="button" value="Mostrar en todos los planetas" onclick="todos()"> <br> -->
+            <input class="boton-reset" type="reset" value="De nuevo">
         </form>
     </div>
     
     <div class="caja-resultado">
-        <p id="resultado" class="resultado"></p>
+        <p id="resultado" class="resultado">Aquí saldrá tu peso en el planeta que elijas</p>
     </div>
 
     <div class="todos">

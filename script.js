@@ -1,7 +1,8 @@
 let comenzar = function(){
 
     let peso = document.getElementById("peso").value;
-    let planeta = document.getElementById("opcion").value
+    let planeta = document.getElementById("opcion").value;
+    let img = document.createElement('img');
 
         let marte = peso * 3.7 / 9.8;
         let luna = peso * 1.6 / 9.8;
@@ -37,12 +38,15 @@ let comenzar = function(){
     }else if (planeta == 'Mercurio'){
         document.getElementById("resultado").innerHTML = (`Tu peso en mercurio es de: ${Math.round(mercurio)} kg`)
 
+    }else if (peso === ''){
+        document.getElementById("resultado").innerHTML = ('No es válido')
+
     }else{
         alert('De nuevo');
     }
 }
 
-let todos = function(){
+/* let todos = function(){
 
     document.getElementById("1").innerHTML = 
     `Peso en la tierra ${peso} kg`;
@@ -70,4 +74,4 @@ let todos = function(){
 
     document.getElementById("9").innerHTML = 
         `Peso en la mercurio ${Math.round(mercurio)} kg`;
-}
+} */
