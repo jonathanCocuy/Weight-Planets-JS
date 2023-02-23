@@ -10,6 +10,8 @@ body{
     width: 100%;
 }
 
+/* Título */
+
 .titulo-principal{
     font-size: 40px;
     text-align: center;
@@ -18,17 +20,16 @@ body{
     color: rgb(215, 215, 215);
 }
 
-.caja-parrafo-principal{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 50px;
-}
+/* Párrafo principal */
 
 .parrafo-principal{
     font-size: 30px;
     color: rgb(175, 175, 175);
+    text-align: center;
+    margin: 20px;
 }
+
+/* Recuadro del formulario */
 
 .formulario{
     width: 100%;
@@ -65,6 +66,8 @@ body{
     padding: 5px;
     outline: none;
 }
+     
+    /* Quitar botones de campo input number */
 
 .inputs[type=number]::-webkit-inner-spin-button, 
 .inputs[type=number]::-webkit-outer-spin-button { 
@@ -79,7 +82,7 @@ body{
     border: 1px solid rgb(99, 99, 99);
 }
 
-.selector{
+.selector{ /* Desplegable de planetas */
     width: 280px;
     height: 35px;
     border: 1px solid rgb(143, 143, 143);
@@ -147,6 +150,10 @@ body{
     background-image: url(https://images4.alphacoders.com/882/882586.jpg);
     background-size: 510px;
     background-position-x: center;
-
 }
 
+/* Responsive */
+
+@media screen {
+    
+}
