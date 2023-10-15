@@ -1,4 +1,10 @@
+const InitialState  = () => {
+    let textPrincipal = "Aquí saldrá tu peso en el planeta que elijas"
+    document.getElementById("resultado").innerHTML = textPrincipal;
+}
+
 let comenzar = function(){
+    
 
     let peso = document.getElementById("peso").value;
     let planeta = document.getElementById("opcion").value;
